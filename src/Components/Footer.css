@@ -1,0 +1,46 @@
+.footer {
+    background-color: var(--dark-moderate-cyan);
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em
+}
+
+.footer__logo {
+    filter: invert(60%) sepia(21%) saturate(880%) hue-rotate(117deg) brightness(91%) contrast(92%);
+    height: 2rem
+}
+
+.footer__links {
+    display: flex;
+    gap: 2em;
+    font-family: 'Barlow', sans-serif;
+    color: var(--dark-desatured-cyan);
+    opacity: 0.7
+}
+
+.footer__links p {
+    cursor: pointer;
+}
+
+.footer__links p:hover {
+    color: var(--white);
+    opacity: 1;
+
+}
+
+.footer__icons {
+    display: flex;
+    gap: 2em;
+    margin-top: 2em;
+
+}
+
+.footer__icons img {
+    cursor: pointer
+}
+
+.footer__icons img:hover {
+    filter: invert(100%) sepia(-0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(400%);
+}

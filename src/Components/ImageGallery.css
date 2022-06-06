@@ -1,0 +1,36 @@
+.image-gallery-container {
+    width: 100%;
+}
+
+.image-gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.image-gallery-grid img,
+.image-gallery-grid-mobile img {
+    width: 100%;
+}
+
+.image-gallery-grid-mobile {
+    display: none;
+
+}
+
+
+@media screen and (max-width:953px) {
+    .image-gallery-grid {
+        display: none;
+    }
+
+
+    .image-gallery-grid-mobile {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
+
+
+}

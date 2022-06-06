@@ -1,0 +1,136 @@
+.hero-container {
+    background: url(../assets/images/desktop/image-header.jpg);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+    align-items: center;
+    height: 75px;
+}
+
+.navbar__logo {
+    cursor: pointer;
+}
+
+
+
+.navbar__links ul {
+    display: flex;
+    gap: 2em;
+    color: var(--white);
+    font-family: 'Barlow', sans-serif;
+    align-items: center;
+}
+
+.navbar__links li {
+    cursor: pointer;
+}
+
+.navbar__contact-button {
+    font-family: 'Fraunces';
+    border: none;
+    background-color: var(--white);
+    padding: 0.9em 1.8em;
+    font-size: 0.9rem;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.navbar__contact-button:hover {
+    background-color: #7bd2fd;
+    color: var(--white);
+    transition: 0.5s;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 75px);
+    gap: 10%
+}
+
+.hero-title {
+    color: var(--white);
+    font-family: 'Fraunces';
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-weight: 900;
+    font-style: bold;
+    margin-top: 2em;
+    font-size: 3rem;
+    text-align: center
+}
+
+.arrow-down {
+    cursor: pointer;
+}
+
+.hamburger-icon {
+    display: none;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+@media screen and (max-width:953px) {
+    .navbar__links {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        position: fixed;
+        height: calc(100vh - 75px);
+        background-color: var(--white);
+        padding: 2em 4em;
+        top: 75px;
+        right: 0;
+        height: auto;
+        justify-content: flex-end;
+        text-align: center;
+
+    }
+
+    .navbar__contact-button {
+        margin-top: 1em;
+        background-color: var(--yellow);
+        font-size: 1.2rem
+    }
+
+    .navbar__contact-button:hover {
+        background-color: var(--white);
+        color: #3EBFFF;
+    }
+
+    .hamburger-menu li {
+        margin-bottom: 1em;
+        font-size: 1.5rem;
+        font-family: 'Barlow', sans-serif;
+        cursor: pointer
+    }
+
+    .hamburger-menu li:hover {
+        color: #3EBFFF;
+        transition: 0.5s;
+    }
+
+
+}

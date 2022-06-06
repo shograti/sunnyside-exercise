@@ -1,0 +1,81 @@
+.testimonials-container {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    padding: 5em 2em;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 3em;
+
+}
+
+.testimonials-title {
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    letter-spacing: 1px;
+    color: var(--grayish-blue);
+    font-weight: 900;
+    letter-spacing: 8px;
+    margin-bottom: 1em;
+}
+
+.testimonial__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 0.8em;
+}
+
+.testimonial__card img {
+    border-radius: 50%;
+}
+
+.testimonial__text-content {
+    margin: 2em 0em;
+    max-width: 35ch;
+    font-family: 'Barlow', sans-serif;
+    color: var(--dark-grayish-blue);
+    line-height: 2em;
+
+}
+
+.testimonial__people-name {
+    font-family: 'Fraunces', serif;
+    color: var(--very-dark-grayish-blue);
+
+}
+
+.testimonial__people-job {
+    color: var(--grayish-blue);
+    font-family: 'Barlow', sans-serif;
+}
+
+@media screen and (max-width:953px) {
+
+    .testimonials-container {
+        padding: 3em 2em 5em;
+    }
+
+    .testimonials-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 5em;
+
+
+    }
+
+    .testimonial__card {
+        gap: 0em;
+    }
+
+}
